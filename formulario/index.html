@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulário Imobiliária</title>
+  </head>
+  <body>
+    <header>
+      <img src="public/image/logo.png" />
+    </header>
+    <main>
+      <div id="groupTitle">
+        <h1 id="title">Não encontrou o que procurava?</h1>
+        <h2 id="subtitle">Preencha o formulário e retornaremos o contato.</h2>
+        <div id="imageWoman" ><img src="public/image/woman.png" /></div>
+      </div>
+
+      <form method="post">
+        <fieldset id="fieldForm">
+          <div class="groupForm">
+            <label class="textForm" for="name">Nome:</label>
+            <input
+              class="inputText"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Digite seu nome"
+              required
+            />
+          </div>
+          <div class="groupForm">
+            <label class="textForm" for="email">Email:</label>
+            <input
+              class="inputText"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu email"
+              required
+            />
+          </div>
+          <div class="groupForm">
+            <label class="textForm" for="phone">Telefone:</label> <br>
+            <input
+              class="inputText phone"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Digite seu número com DDD"
+              required
+            />
+          </div>
+          <div class="groupForm">
+            <label class="textForm" for="birthDate">Data de nascimento:</label>
+            <input type="date" id="birthDate" name="birthDate" required />
+          </div>
+          <div class="groupForm">
+            <label class="textForm" for="district">Bairro de interesse:</label>
+            <select name="district" id="district">
+              <option value="Altiplano">Altiplano</option>
+              <option value="ÁguaFria">Água Fria</option>
+              <option value="Bessa">Bessa</option>
+              <option value="Aeroclube">Aeroclube</option>
+              <option value="Anatólia">Anatólia</option>
+              <option value="Bancários">Bancários</option>
+              <option value="CaboBranco">Cabo Branco</option>
+              <option value="Centro">Centro</option>
+              <option value="CostaSol">Costa do Sol</option>
+              <option value="Gramame">Gramame</option>
+              <option value="Manaíra">Manaíra</option>
+              <option value="Miramar">Miramar</option>
+              <option value="Tambaú">Tambaú</option>
+              <option value="Maternidade">Maternidade</option>
+              <option value="Jatobá">Jatobá</option>
+              <option value="Horizonte">Horizonte</option>
+              <option value="Tambauzinho">Tambauzinho</option>
+              <option value="PraiaBela">Praia Bela</option>
+              <option value="Angelita">Angelita</option>
+              <option value="Magnolia">Magnolia</option>
+            </select>
+          </div>
+          <div class="groupForm">
+            <div id="permissions">
+              <p class="textForm">Períodos para contato</p>
+              <fieldset id="fieldRadios">
+                <div class="groupContact">
+                  <label class="textRadios" for="contact">Manhã</label>
+                  <input
+                    class="radiosMargin"
+                    type="radio"
+                    value="manha"
+                    name="fieldTurno"
+                    id="contact"
+                  />
+                </div>
+                <div class="groupContact">
+                  <label class="textRadios" for="contact" name="fieldTurno"
+                    >Tarde</label
+                  >
+                  <input
+                    class="radiosMargin"
+                    type="radio"
+                    value="tarde"
+                    name="fieldTurno"
+                    id="contact"
+                  />
+                </div>
+                <div class="groupContact">
+                  <label class="textRadios" for="contact" name="fieldTurno"
+                    >Noite</label
+                  >
+                  <input
+                    class="radiosMargin"
+                    type="radio"
+                    value="noite"
+                    name="fieldTurno"
+                    id="contact"
+                  />
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="groupForm">
+            <p class="textForm">Autorizo contato por Telefone</p>
+            <fieldset id="fieldRadios">
+              <div class="groupContact">
+                <label class="textRadios" for="authorization">Sim</label>
+                <input
+                  class="radiosMargin"
+                  type="radio"
+                  name="authorization"
+                  id="authorization"
+                />
+              </div>
+              <div class="groupContact">
+                <label class="textRadios" for="authorization">Não</label>
+                <input
+                  class="radiosMargin"
+                  type="radio"
+                  name="authorization"
+                  id="authorization"
+                />
+              </div>
+            </fieldset>
+          </div>
+
+          <button type="submit" name="button" id="buttonForm">Enviar</button>
+        </fieldset>
+      </form>
+    </main>
+    <script src="public/js/script.js"></script>
+  </body>
+</html>
